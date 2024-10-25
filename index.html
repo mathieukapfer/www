@@ -60,47 +60,78 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="accueil" style="background-image: url('res/bandeau.jpg'); background-size: cover; background-position: center; font-family: 'Dancing Script', cursive;">
-    <div style="background-color: rgba(255, 255, 255, 0.4); padding: 10px; display: inline-block;">
-        <h1 style="font-size: 3rem;">Optimisez votre vie grâce au Feng Shui</h1>
-        <p style="font-size: 1.7rem;">Utilisez les énergies de la Terre pour améliorer votre quotidien.</p>
+<section class="hero" id="accueil" style="background-image: url('res/bandeau.jpg'); background-size: cover; background-position: center; font-family: 'Dancing Script', cursive; position: relative; ">
+    <!-- Overlay optionnel pour assombrir l'image (facultatif selon la lisibilité) -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0);"></div>
+
+    <div style="position: relative; top:0 ; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+        <!-- Première ligne de texte avec fond plein largeur -->
+        <div style="margin-bottom:10rem; background-color: rgba(255, 255, 255, 0.4); width: 100%; padding: 20px; text-align: center;">
+            <h1 style="font-size: 3rem; color: #333; margin: 0;">Optimisez votre vie grâce au Feng Shui</h1>
+        </div>
+
+        <!-- Deuxième ligne de texte avec fond plein largeur -->
+        <div style="background-color: rgba(0, 0, 0, 0.4); width: 100%; padding: 20px; text-align: center;">
+            <p style="font-size: 1.5rem; color: #fff; margin: 0;">Utilisez les énergies de la Terre pour améliorer votre quotidien.</p>
+        </div>
     </div>
-    </section>
+</section>
+
 
     <!-- Prestations Section -->
     <section id="prestations" class="section-content">
         <div class="container">
-            <h2 class="section-title">Prestations</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3>Analyse Feng Shui</h3>
-                    <p>Une analyse Feng Shui de déroule en 3 étapes principales :</p>
-                    <ul>
-                        <li><strong>Étape 1 :</strong> Visite des lieux et entretien (2 à 3h) pour comprendre vos besoins et analyser l’espace.</li>
-                        <li><strong>Étape 2 :</strong> Création d’un book d’expertise complet incluant le plan et les recommandations pour l'agencement et l’harmonisation.</li>
-                        <li><strong>Étape 3 :</strong> Deuxième entretien pour vous présenter les propositions de correction et vous accompagner dans les changements.</li>
-                    </ul>
-                    <p>Les tarifs sont calculés au mètre carré et au nombre d’habitants. Demandez votre devis gratuit.</p>
-                </div>
-                <div class="col-lg-6">
-                    <h3>Purification / Désencombrement</h3>
-                    <p>Des méthodes subtiles pour purifier les lieux sans modifier l’agencement. Utilisation d’outils comme les bougies, encens, clappements de mains et sons de carillons.</p>
-                    <p>Avant l’intervention, un nettoyage complet du lieu avec des produits naturels est nécessaire.</p>
-                    <p>Forfaits d’accompagnement disponibles pour faciliter le processus de désencombrement.</p>
-                </div>
+          <h2 class="section-title">Prestations</h2>
+
+          <!-- Analyse -->
+          <section id="analyse" class="section-content">
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <h3>Analyse Feng Shui</h3>
+                <p>Une analyse Feng Shui de déroule en 3 étapes principales :</p>
+                <ul>
+                  <li><strong>Étape 1 :</strong> Visite des lieux et entretien (2 à 3h) pour comprendre vos besoins et analyser l’espace.</li>
+                  <li><strong>Étape 2 :</strong> Création d’un book d’expertise complet incluant le plan et les recommandations pour l'agencement et l’harmonisation.</li>
+                  <li><strong>Étape 3 :</strong> Deuxième entretien pour vous présenter les propositions de correction et vous accompagner dans les changements.</li>
+                </ul>
+                <p>Les tarifs sont calculés au mètre carré et au nombre d’habitants. Demandez votre devis gratuit.</p>
+              </div>
+              <div class="col-md-6" style="display: flex; align-items: center;">
+                <img src="res/image1.jpeg" class="img-fluid" alt="Analyse Feng Shui" style="max-width: 100%; height: auto;">
+              </div>
             </div>
-        </div>
+          </section>
+
+            <!-- Purification -->
+            <section id="purification" class="section-content">
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <h3>Purification / Désencombrement</h3>
+                <p>Des méthodes subtiles pour purifier les lieux sans modifier l’agencement. Utilisation d’outils comme les bougies, encens, clappements de mains et sons de carillons.</p>
+                <p>Avant l’intervention, un nettoyage complet du lieu avec des produits naturels est nécessaire.</p>
+                <p>Forfaits d’accompagnement disponibles pour faciliter le processus de désencombrement.</p>
+              </div>
+              <div class="col-md-6" style="display: flex; align-items: center;"w>
+                <img src="res/image2.jpeg" class="img-fluid" alt="Analyse Feng Shui" style="max-width: 100%; height: auto;">
+              </div>
+            </div>
+            </section>
+
+            <!-- Ateliers Section -->
+            <section id="ateliers" class="section-content">
+              <div class="row mb-4">
+                <div class="col-md-6" >
+                  <h2 class="section-title">Ateliers Feng Shui</h2>
+                  <p>Les ateliers Feng Shui vous permettent de découvrir les bases du Feng Shui selon l’école des 8 palais (Ba Zhai). Vous apprendrez à activer vos énergies favorables et neutraliser les défavorables.</p>
+                  <p>Chaque participant repart avec un mini-book Feng Shui et des conseils pratiques !</p>
+                </div>
+                <div class="col-md-6" style="display: flex; align-items: center;">
+                  <img src="res/image3.jpeg" class="img-fluid" alt="Analyse Feng Shui" style="max-width: 100%; height: auto;">
+                </div>
+            </section>
+
     </section>
 
-    <!-- Ateliers Section -->
-    <section id="ateliers" class="section-content">
-        <div class="container">
-            <h2 class="section-title">Ateliers Feng Shui</h2>
-            <p>Les ateliers Feng Shui vous permettent de découvrir les bases du Feng Shui selon l’école des 8 palais (Ba Zhai). Vous apprendrez à activer vos énergies favorables et neutraliser les défavorables.</p>
-            <p>Chaque participant repart avec un mini-book Feng Shui et des conseils pratiques !</p>
-        </div>
-    </section>
 
     <!-- Tarifs Section -->
     <section id="tarifs" class="section-content">
