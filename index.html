@@ -46,8 +46,8 @@
           font-size: 1.2rem;
       }
       .section-title {
-          margin-top: 40px;
-          margin-bottom: 20px;
+          margin-top: 0px;
+          margin-bottom: 0px;
           text-align: center;
       }
       .section-content {
@@ -64,7 +64,7 @@
 <script>
     // Script simple pour rendre l'effet de parallaxe plus dynamique
     window.addEventListener('scroll', function() {
-        const parallax = document.querySelector('.hero');
+        const parallax = document.querySelector('.hero__');
 
             // Récupère la position de défilement
             const scrollPosition = window.scrollY;
@@ -122,24 +122,31 @@
       </div>
     </section>
 
+    <!-- yang yang -->
+    <!--section class="d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 1);">
+      <div class="text-center">
+        <img src="res/yingyang.jpg" alt="Image exemple" style="height:10em" class="img-fluid rounded">
+      </div>
+    </section>
+
     <!-- Offres Section -->
-    <section  id="offres" class="section-content">
-      <h1 class="hero" style="background-image: url('res/bandeauX4ciel.jpg'); background-size: cover; text-shadow: 2px 2px 2px rgba(255, 255, 255, 1); font-weight: bold; padding-top: 50px; padding-bottom: 50px; margin-top: 40px">Nos Offres Feng Shui</h1>
+    <section  id="offres" class="section-content" style="background-image: url('res/paysage-contact.jpg'); background-repeat: no-repeat; background-size: cover ; margin-top: 0px;">
+      <h1 class="hero" style="background-image: url('res/bandeauX4ciel.jpg'); background-size: cover; text-shadow: 2px 2px 2px rgba(255, 255, 255, 1); font-weight: bold;  padding-top: 50px; padding-bottom: 50px; margin-top: 0px; margin-bottom: 0px">Nos Offres Feng Shui</h1>
 
         <!-- Premier contact avec le Feng Shui -->
       <div class="container my-5">
         <div class="mb-5">
-          <h2 class="text-center" style="margin-bottom:1rem; background-color: rgba(204, 218, 221, 0.4); width: 100%; padding-top: 20px; padding-bottom: 20px; font-size: 2.5rem; font-family: 'Dancing Script', cursive;">Premier contact avec le Feng Shui</h2>
+          <h2 class="text-center" style="margin-bottom:1rem; background-color: rgba(204, 218, 221, 0.8); width: 100%; padding-top: 20px; padding-bottom: 20px; font-size: 2.5rem; font-family: 'Dancing Script', cursive;">Premier contact avec le Feng Shui</h2>
 
           <!-- FORFAIT DÉCOUVERTE « MA 1ère VISITE FENG SHUI » -->
           <div class="row align-items-center mb-4">
-            <h5>FORFAIT DÉCOUVERTE «Ma 1ère VISITE FENG SHUI»</h5>
             <div class="col-md-5">
               <p>
                 <img src="res/image1.jpeg" alt="Découverte Feng Shui" class="img-fluid rounded">
               <p>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.1)">
+              <h5>FORFAIT DÉCOUVERTE «Ma 1ère VISITE FENG SHUI»</h5>
               <p>Un premier regard bienveillant et avisé sur votre intérieur et le Qi qui y circule. Harmonie des formes, des couleurs et des matières, équilibre du Yin et du Yang. Conseils clés pour optimiser votre lieu de vie.</p>
               <p><small class="text-muted">Base 1 à 2 h de consultation - 70 €.</small></p>
             </div>
@@ -147,13 +154,13 @@
 
           <!-- FORFAIT FENG SHUI « JE FAIS LE TRI DANS MA VIE » -->
           <div class="row align-items-center mb-4">
-            <h5>FORFAIT FENG SHUI «JE FAIS LE TRI DANS MA VIE»</h5>
             <div class="col-md-5">
               <p>
                 <img src="res/rangement.jpg" alt="Je fais le tri dans ma vie" class="img-fluid rounded">
               <p>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.1)">
+            <h5>FORFAIT FENG SHUI «JE FAIS LE TRI DANS MA VIE»</h5>
               <p>Parce que l’on a souvent du mal à se lancer seul dans le grand rangement de sa vie, ce forfait vous accompagne ! Nous passerons ensemble une journée complète à trier, désencombrer et purifier votre espace de vie.</p>
               <p><small class="text-muted">Forfait à la journée - 280 €</small></p>
             </div>
@@ -162,17 +169,17 @@
 
         <!-- Analyse Feng Shui approfondie -->
         <div class="mb-5">
-          <h2 class="text-center" style="margin-bottom:1rem; background-color: rgba(174, 153, 126, 0.4); width: 100%; padding: 20px; font-size: 2.5rem; font-family: 'Dancing Script', cursive;">Analyse Feng Shui approfondie</h2>
+          <h2 class="text-center" style="margin-bottom:1rem; background-color: rgba(174, 153, 126, 0.8); width: 100%; padding: 20px; font-size: 2.5rem; font-family: 'Dancing Script', cursive;">Analyse Feng Shui approfondie</h2>
 
           <!-- ANALYSE FENG SHUI « MON MONDE INTERIEUR » -->
           <div class="row align-items-center mb-4">
-            <h5>ANALYSE FENG SHUI « MON MONDE INTERIEUR »</h5>
             <div class="col-md-5">
               <p>
-                <img src="res/image3.jpeg" alt="Mon monde intérieur" class="img-fluid rounded">
+                <img src="res/monde-interieur.jpg" alt="Mon monde intérieur" class="img-fluid rounded">
               <p>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7  shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.3)">
+              <h5>ANALYSE FENG SHUI « MON MONDE INTERIEUR »</h5>
               <p>Analyse Feng Shui complète selon les formules BA ZHAI et XUAN KONG FEI XING, avec étude des formes et de l’encombrement. Conseils d’aménagement et remèdes pour optimiser votre espace.</p>
               <p><small class="text-muted">Plan précis à l’échelle requis ou à fournir - 8 €/m²</small></p>
             </div>
@@ -180,13 +187,13 @@
 
           <!-- ANALYSE FENG SHUI « TOTAL BIEN-ETRE » -->
           <div class="row align-items-center mb-4">
-            <h5>ANALYSE FENG SHUI « TOTAL BIEN-ETRE »</h5>
             <div class="col-md-5">
               <p>
-                <img src="res/image5.jpeg" alt="Total bien-être" class="img-fluid rounded">
+                <img src="res/total-bien-etre.jpg" alt="Total bien-être" class="img-fluid rounded">
               <p>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7  shadow-lg rounded " style="background-color: rgba(255, 255, 255, 0.5)">
+              <h5>ANALYSE FENG SHUI « TOTAL BIEN-ETRE »</h5>
               <p>Analyse Feng Shui complète de votre intérieur et extérieur selon les formules BA ZHAI et XUAN KONG FEI XING, avec des recommandations pour les espaces intérieurs et extérieurs.</p>
               <p><small class="text-muted">Plan précis à l’échelle requis ou à fournir - 12 €/m²</small></p>
             </div>
@@ -195,39 +202,38 @@
 
         <!-- Harmonie du couple et de la cuisine -->
         <div class="mb-5">
-          <h2 class="text-center" style="margin-bottom:1rem; background-color: rgba(225, 165, 193, 0.4); width: 100%; padding: 20px; font-size: 2.5rem; font-family: 'Dancing Script', cursive;">Analyse Feng Shui specifique</h2>
+          <h2 class="text-center" style="margin-bottom:1rem; background-color: rgba(220, 177, 143, 0.9); width: 100%; padding: 20px; font-size: 2.5rem; font-family: 'Dancing Script', cursive;">Analyse Feng Shui specifique</h2>
 
           <!-- FORFAIT FENG SHUI HARMONIE DU COUPLE -->
           <div class="row align-items-center mb-4">
-            <h5>FORFAIT FENG SHUI « HARMONIE DU COUPLE »</h5>
             <div class="col-md-5">
               <p>
-                <img src="res/couple-2.jpg" alt="Harmonie du couple" class="img-fluid rounded">
+                <img src="res/couple-3.jpg" alt="Harmonie du couple" class="img-fluid rounded">
               <p>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.7)">
+            <h5>FORFAIT FENG SHUI « HARMONIE DU COUPLE »</h5>
               <p>Bénéficiez d’une analyse Feng Shui complète et valable à vie de votre intérieur pour harmoniser votre vie de couple. Analyse pour deux personnes, valable pour un appartement jusqu’à 80 m².</p>
               <p><small class="text-muted">Plan précis à l’échelle requis ou à fournir - 490 €</small></p>
             </div>
           </div>
 
           <!-- FORFAIT FENG SHUI « MA CUISINE & MOI » -->
-          <h5>FORFAIT FENG SHUI « MA CUISINE & MOI »</h5>
           <div class="row align-items-center mb-4">
             <div class="col-md-5">
               <p>
                 <img src="res/cuisine-2.jpg" alt="Ma cuisine et moi" class="img-fluid rounded">
               <p>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7  shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.7)">
+              <h5>FORFAIT FENG SHUI « MA CUISINE & MOI »</h5>
               <p>Analyse Feng Shui centrée sur votre cuisine, optimisant la place de chaque élément pour neutraliser le mauvais Qi et activer le bon. Forfait pour un appartement ou une maison de plain-pied de 80 m² max.</p>
               <p><small class="text-muted">Plan précis à l’échelle requis ou à fournir - 390 €</small></p>
             </div>
           </div>
         </div>
-
       </div> <!-- End of Container -->
-
+      <p>.
     </section>
 
     <!-- Contact Section -->
@@ -268,27 +274,23 @@
     <!-- Contact Section -->
     <section id="contact" class="section-content">
       <!-- Image element - set the background image for the header in the line below-->
-        <div class="py-3 bg-image-full" style="background-image: url('res/sun_rise.JPG') ; height:40rem; padding-top:0">
+        <div class="py-3 bg-image-full" style="background-image: url('res/paysage-contact.jpg') ; height:40rem; padding-top:0; display: flex; justify-content: center; align-items: center;">
           <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
-          <div class="text-center my-1" style="padding-top:0; color:#EEEEEE">
+          <div class="text-center my-1" style="padding-top:0; color:#222222">
             <h3 style="margin-block-end: 8px">
               <a id="Contact">Contact :</a>
               <h3 style="margin-block-end: 8px"> Delphine BROSSARD</h3>
               <h3 style="margin-block-end: 8px"> 07 89 04 82 75</h3>
               <h3 style="margin-block-end: 8px">
-                <a href="mailto:delphes38@icloud.com" style="color:#EEEEEE">delphes38@icloud.com</a>
+                <a href="mailto:delphes38@icloud.com" style="color:#333333">delphes38@icloud.com</a>
               </h3>
           </div>
         </div>
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
-      <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Delphine Brossard 2024</p></div>
+    <footer class="py-5" style="background-color:#71716f;" >
+      <div class="container" ><p class="m-0 text-center" style="color:#d7c7b0">Copyright &copy; Delphine Brossard 2025</p></div>
     </footer>
     </section>
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
