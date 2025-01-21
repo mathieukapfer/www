@@ -7,78 +7,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Section avec l'effet de parallaxe */
-        .parallax {
-            background-image: url('res/bandeauX4.jpg'); /* URL de l'image de fond */
-            height: 600px; /* Hauteur de la section */
-            background-attachment: fixed; /* C'est ce qui crée l'effet de parallaxe */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            }
-
-        /* Style de la zone de texte */
-        .parallax-text {
-            color: white;
-            text-align: center;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2.5rem;
-            font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
-            padding: 20px;
-            border-radius: 10px;
-        }
-      body {
-          font-family: Arial, sans-serif;
-      }
-      .hero {
-          background-color: #F8F9FA;
-          padding: 0px;
-          text-align: center;
-      }
-      .hero h1 {
-          font-size: 2.5rem;
-          margin-bottom: 20px;
-      }
-      .hero p {
-          font-size: 1.2rem;
-      }
-      .section-title {
-          margin-top: 0px;
-          margin-bottom: 0px;
-          text-align: center;
-      }
-      .section-content {
-          margin-bottom: 0px;
-      }
-      .bg-image-full {
-          background-repeat: no-repeat;
-          background-attachment: scroll;
+      /* Section avec l'effet de parallaxe */
+      .parallax {
+          background-image: url('res/bandeauX4.jpg'); /* URL de l'image de fond */
+          height: 600px; /* Hauteur de la section */
+          background-attachment: fixed; /* C'est ce qui crée l'effet de parallaxe */
           background-position: center;
+          background-repeat: no-repeat;
           background-size: cover;
-      }
+          }
+
+           /* Style de la zone de texte */
+           .parallax-text {
+               color: white;
+               text-align: center;
+               position: relative;
+               top: 50%;
+               transform: translateY(-50%);
+               font-size: 2.5rem;
+               font-weight: bold;
+               background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
+               padding: 20px;
+               border-radius: 10px;
+           }
+           body {
+               font-family: Arial, sans-serif;
+           }
+           .hero {
+               background-color: #F8F9FA;
+               padding: 0px;
+               text-align: center;
+           }
+           .hero h1 {
+               font-size: 2.5rem;
+               margin-bottom: 20px;
+           }
+           .hero p {
+               font-size: 1.2rem;
+           }
+           .section-title {
+               margin-top: 0px;
+               margin-bottom: 0px;
+               text-align: center;
+           }
+           .section-content {
+               margin-bottom: 0px;
+           }
+           .bg-image-full {
+               background-repeat: no-repeat;
+               background-attachment: scroll;
+               background-position: center;
+               background-size: cover;
+           }
     </style>
   </head>
-<script>
+  <script>
     // Script simple pour rendre l'effet de parallaxe plus dynamique
     window.addEventListener('scroll', function() {
         const parallax = document.querySelector('.hero__');
 
-            // Récupère la position de défilement
-            const scrollPosition = window.scrollY;
+        // Récupère la position de défilement
+        const scrollPosition = window.scrollY;
 
-            // Calcule la position verticale de base 'center' (50% de la hauteur de la section)
-            const basePosition = 50; // correspond à 50% pour background-position
+        // Calcule la position verticale de base 'center' (50% de la hauteur de la section)
+        const basePosition = 50; // correspond à 50% pour background-position
 
-            // On ajoute un offset dépendant du défilement (par exemple, on divise le scroll pour ralentir)
-            const offset = scrollPosition * 0.5; // Facteur de vitesse (0.3 est plus lent)
+        // On ajoute un offset dépendant du défilement (par exemple, on divise le scroll pour ralentir)
+        const offset = scrollPosition * 0.5; // Facteur de vitesse (0.3 est plus lent)
 
-            // Met à jour la position du background (position horizontale 'center' et verticale base + offset)
-            parallax.style.backgroundPosition = `center calc(${basePosition}% + ${offset}px)`;
+        // Met à jour la position du background (position horizontale 'center' et verticale base + offset)
+        parallax.style.backgroundPosition = `center calc(${basePosition}% + ${offset}px)`;
     });
-</script>
+  </script>
   <body>
 
     <!-- Navbar -->
@@ -92,6 +92,9 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pres">Le Feng Shui</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#offres">Offres</a>
@@ -114,23 +117,105 @@
         <div style="margin-bottom:15rem; background-color: rgba(255, 255, 255, 0.0); width: 100%; padding: 20px; text-align: center;">
           <h1 style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); font-size: 4rem; color: #333; margin: 0;">Feng Shui Consul'T</h1>
           <p style="font-family: 'xxxDancing Script'; font-weight: bold;  font-size: 2.5rem; color: #OOO; margin: 0;">Etudes & Recommandations en Feng Shui traditionel</p>
-            <img src="res/picto-fs.png" alt="" class="img-fluid rounded" style="margin-top:2rem">
+          <img src="res/picto-fs.png" alt="" class="img-fluid rounded" style="margin-top:2rem">
         </div>
       </div>
     </section>
 
-    <!-- yang yang -->
-    <!--section class="d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 1);">
+    <!-- yang yang>
+    <section class="d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 1);">
       <div class="text-center">
         <img src="res/yingyang.jpg" alt="Image exemple" style="height:10em" class="img-fluid rounded">
       </div>
-    </section>
+    </section-->
 
+    <!-- Pres Section -->
+    <section id="pres" class="section-content" style="background-image: url('res/paysage-contact.jpg'); background-repeat: no-repeat; background-size: cover ; padding-bottom: 1rem; margin-bottom: 0px; margin-top: 0px;">
+      <h1 class="hero" style="background-image: url('res/bandeauX4ciel.jpg'); background-size: cover; text-shadow: 2px 2px 2px rgba(255, 255, 255, 1); font-weight: bold;  padding-top: 50px; padding-bottom: 50px; margin-top: 0px; margin-bottom: 0px">Le Feng Shui : une richesse ancestrale</h1>
+
+      <div class="container my-5">
+        <div class="mb-5" style="margin-bottom:0px">
+          <section class="intro">
+            <p class="lead">
+              Comme tout art métaphysique, le Feng Shui peut s’expliquer par 1000 mots, mais rien n’en vaudra l’expérience.
+            </p>
+          </section>
+          <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.2); padding:1rem;">
+            <h2>La naissance d’une science</h2>
+            <p style="margin:1rem;">
+              Issu des arts millénaires taoïstes chinois, le Feng Shui traditionnel est aujourd’hui considéré comme une véritable science. En effet, cette science  est le fruit de vastes études et analyses sérieuses de terrains et de peuples, qui ont été menées par les maîtres taoïstes chinois d’il y a près de 5000 ans. </p>
+            <div class="row align-items-center" style="margin:1rem;">
+              <div class="col-md-5 d-flex justify-content-center">
+                <img src="res/luopan-2.JPG" alt="Dragon" class="img-fluid rounded" style="margin:10px; max-width:100%;">
+              </div>
+              <div class="col-md-7 rounded">
+                <p>Ces études ont donné naissance à des théories et des formules, parfois complexes, qui mettent en relation la place de l’Homme dans son environnement, entre le Ciel et la Terre, entre la Montagne et l’Eau, en y associant également le paramètre du Temps.</p>
+              </div>
+            </div>
+            <p style="margin:1rem;">Ainsi, les fondements des différents systèmes du Feng Shui traditionnel sont basés sur l’observation de l’influence de l’environnement sur les différents peuples à cette époque, à savoir sur l’essor ou le déclin potentiel de ces mêmes peuples, en fonction des conditions dans lesquelles ils vivaient et donc de leurs relations avec l’Espace et le Temps (climat, saisons, géographie ..).
+            </p>
+          </div>
+          <br>
+          <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.2); padding:1rem;">
+            <div class="row align-items-center mb-4">
+              <div class="col-md-5">
+                <p>
+                  <img src="res/dragon.PNG" alt="Dragon" class="img-fluid rounded">
+                </p>
+              </div>
+              <div class="col-md-7 rounded">
+                <h2>Le Souffle du Dragon</h2>
+                <p style="margin:1rem;">
+                  De la Montagne, s’écoule le souffle du Dragon, également appelé souffle cosmique, ou encore souffle vital : c’est le fameux Qi (Chi).
+
+                  Le Qi traverse, relie et anime toute chose sur Terre. C’est le fluide vital qui anime tout être vivant, de sa naissance jusqu’à sa mort. C’est l’Energie qui monte au Printemps et redescend à l’Automne. C’est celle qui sommeille en Hiver, et qui brûle en Été, à son apogée, par le Feu du plein soleil. C’est aussi l’Energie qui donne force et densité au Minéral, son aplomb et son expansion au Végétal, ses courbes et sa fluidité à l’Océan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.6); padding:1rem;">
+            <h2>La manifestation de l’Univers</h2>
+            <p style="margin:1rem;">A l’origine du Cosmos, nous étions 1. Pour se manifester, l’Univers, le Grand Tout, s’est divisé en 2, puis 3, puis en 10 000 êtres . Le Yin et le Yang, représenté par le symbole du Tai Ji, montre que rien n’existe dans l’existence sans son contraire, sans son opposé. Le chaud et le froid, le grand et le petit, le lourd et le léger, l’Amour et la peur.</p>
+            <div class="row align-items-center" style="margin:1rem;">
+              <div class="col-md-5">
+                <img src="res/tao-cosmos.webp" alt="Tao" class="img-fluid rounded">
+              </div>
+              <div class="col-md-7 rounded">
+                <p style="padding:1rem;">Tout, absolument tout dans l’univers est en dualité. Et, à la maturité de chaque chose, germe la graine de l’opposé. Tout est cycle de transformation. Tout est cycle permanent de mort et de renaissance. Dans les philosophies bouddhiste et hindouiste, le but de l’existence est de revenir à la grande conscience, à l’Unité.</p>
+              </div>
+            </div>
+            <p style="padding:1rem;">Pour définir l’univers, les taoïstes ont finalement mis au point le système de transformation de la matière, par le système des 5 mouvements, ou des 5 éléments (Eau, Bois, Feu, Terre, Métal) qui interagissent entre eux en permanence par 3 cycles différents et complémentaires (cycle de production, cycle de destruction, cycle de contrôle).</p>
+
+          </div>
+          <br>
+          <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.6); padding:1rem;">
+            <h2>Applications modernes</h2>
+            <div class="row align-items-center mb-4">
+              <div class="col-md-5 d-flex justify-content-center">
+                <img src="res/5_element.PNG" alt="Dragon" class="img-fluid rounded" style="max-width:100%;">
+              </div>
+              <div class="col-md-7 rounded">
+                <p>C’est grâce à ces différents outils, le Yin et le Yang, les 5 éléments, les formules du paysages (espace extérieur - San He), des 8 palais (espace intérieur - Ba Zhai) et des étoiles volantes (temps - Xuan Kong Fei Xing) que la circulation, la canalisation ou la neutralisation du Qi, en fonction de s’il est favorable (Sheng Qi) ou défavorable (Sha Qi) aux habitants d’un lieu de vie, est travaillée.
+                </p>
+              </div>
+              <p>
+                A sa naissance, chaque être vivant reçoit comme un flash énergétique, qui lui attribue comme un code, une identité cosmique (le Ming Gua). C’est en combinant ce code avec les différentes formules et systèmes de Feng Shui traditionnel que l’on va pouvoir analyser et définir si les énergies en présence d’un lieu sont favorables ou défavorables aux habitants.</p>
+              <p>Alors le praticien Feng Shui pourra recommander et conseiller des aménagements et des changements spécifiques au bureau et à la maison, afin d’optimiser les 4 grands différents aspects de la Vie : Amour & Relations, Santé & Aide céleste, Vitalité & Prospérité, Sérénité & Paix intérieure.
+              </p>
+            </div>
+            <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.6);">
+              <h2>Ethique du praticien</h2>
+              <p>
+                La mission d’un praticien en Feng Shui traditionnel : tout mettre en œuvre, de façon honnête et éthique, suite à la demande claire et respectueuse de son client, pour épanouir ses potentiels de vie & optimiser sa destinée.
+              </p>
+            </div>
+    </section>
     <!-- Offres Section -->
     <section  id="offres" class="section-content" style="background-image: url('res/paysage-contact.jpg'); background-repeat: no-repeat; background-size: cover ; padding-bottom: 1rem; margin-bottom: 0px; margin-top: 0px;">
       <h1 class="hero" style="background-image: url('res/bandeauX4ciel.jpg'); background-size: cover; text-shadow: 2px 2px 2px rgba(255, 255, 255, 1); font-weight: bold;  padding-top: 50px; padding-bottom: 50px; margin-top: 0px; margin-bottom: 0px">Nos Offres</h1>
 
-        <!-- Premier contact avec le Feng Shui -->
+      <!-- Premier contact avec le Feng Shui -->
       <div class="container my-5">
         <div class="mb-5" style="margin-bottom:0px">
           <h2 class="text-center" style="margin-bottom:1rem; background-color: rgba(204, 218, 221, 0.8); width: 100%; padding-top: 20px; padding-bottom: 20px; font-size: 2.5rem; font-family: 'Dancing Script', cursive;">Premier contact avec le Feng Shui</h2>
@@ -181,7 +266,7 @@
               <h5>ANALYSE FENG SHUI</h5>
               <h5>« MON MONDE INTERIEUR »</h5>
               <p>Analyse Feng Shui complète de votre intérieur, selon les formules traditionnelles chinoises, BA ZHAI (8 palais) et XUAN KONG FEI XING (étoiles volantes), ainsi que l’étude des formes et mon regard énergétique (encombrement, pureté, harmonie). Conseils et remèdes en agencement et aménagement. 8€/m2.<p>
-                <p>Base 1 habitant pour un appartement ou maison de plain pied. Autre configuration à tarifier sur devis.</p>
+              <p>Base 1 habitant pour un appartement ou maison de plain pied. Autre configuration à tarifier sur devis.</p>
               <p><small class="text-muted">Plan précis à l’échelle à fournir ou à prévoir en supplément.</small></p>
             </div>
           </div>
@@ -219,7 +304,7 @@
               <h5>FORFAIT FENG SHUI</h5>
               <h5>« HARMONIE DU COUPLE »</h5>
               <p>Offrez à votre couple et à votre vie amoureuse une analyse feng shui complète et valable à vie ! Ce forfait inclue l’étude de votre intérieur selon les formules traditionnelles du système BA ZHAI (8 palais) et du système XUAN KONG FEI XING (étoiles volantes), pour 2 personnes, dans la limite d’un espace de 80 m2.<p>
-<p               <p><small class="text-muted">Plan précis à l’échelle à fournir ou à prévoir en supplément. Tarif : 480€</small><p>
+              <p><small class="text-muted">Plan précis à l’échelle à fournir ou à prévoir en supplément. Tarif : 480€</small><p>
             </div>
           </div>
 
@@ -241,7 +326,6 @@
           </div>
         </div>
       </div> <!-- End of Container -->
-      <p>
     </section>
 
     <!-- Contact Section -->
@@ -254,19 +338,19 @@
           </div>
           <div class="col-md-6">
             <p class="lead" style="margin: 2rem">
-    Depuis plus de vingt ans, je consacre ma vie et mon attention au bien-être, à l’énergie et à l’harmonie, que ce soit pour moi-même, pour les autres ou pour l’espace qui nous entoure. </p>
+              Depuis plus de vingt ans, je consacre ma vie et mon attention au bien-être, à l’énergie et à l’harmonie, que ce soit pour moi-même, pour les autres ou pour l’espace qui nous entoure. </p>
           </div>
         </div>
         <p style="margin: 2rem">Attirée par les pratiques de développement du corps et de l’esprit, mon parcours est marqué par une recherche continue d'équilibre, reposant sur trois piliers: le bien-être intérieur, le travail sur l'énergie ou "Qi" en japonais, et l’harmonisation de l’habitat.
         </p>
 
-    <div class="card shadow-lg" style="padding-top:0px">
-      <div class="card-body" style="padding-top:0px">
-        <h2 class="mt-4">Le bien-être intérieur par le Yoga</h2>
+        <div class="card shadow-lg" style="padding-top:0px">
+          <div class="card-body" style="padding-top:0px">
+            <h2 class="mt-4">Le bien-être intérieur par le Yoga</h2>
             <p>C’est en 2003 à Grenoble que j’ai découvert le hatha yoga, une pratique qui a marqué le point de départ de mon exploration personnelle et spirituelle. Désireuse de partager les bienfaits de cette discipline, j’ai approfondi ma pratique en 2016 en complétant le programme de formation des professeurs à l’ashram international Sivananda d’Orléans. Grâce à ce cheminement, j’ai acquis une maîtrise des techniques traditionnelles du hatha yoga, une base solide pour équilibrer mon âme, mon esprit et mon corps.</p>
 
-            <h2 class="mt-4">L'harmonie de l’habitat grâce au Feng Shui</h2>
-            <p>En 2020, j’ai élargi ma quête de l’équilibre au domaine de l’habitat en m’initiant au Feng Shui traditionnel à la prestigieuse Yap Cheng Hai Academy. J’ai atteint un niveau intermédiaire en 2021, ce qui me permet d’accompagner des particuliers dans l’harmonisation énergétique de leur espace de vie, selon les principes millénaires du Feng Shui. Cette approche complète ma vision d’un bien-être qui englobe non seulement la personne, mais aussi son environnement.</p>
+            <h2 class="mt-4">L&apos;harmonie de l&apos;habitat grâce au Feng Shui</h2>
+            <p>En 2020, j’ai élargi ma quête de l&apos;équilibre au domaine de l’habitat en m’initiant au Feng Shui traditionnel à la prestigieuse Yap Cheng Hai Academy. J’ai atteint un niveau intermédiaire en 2021, ce qui me permet d’accompagner des particuliers dans l’harmonisation énergétique de leur espace de vie, selon les principes millénaires du Feng Shui. Cette approche complète ma vision d’un bien-être qui englobe non seulement la personne, mais aussi son environnement.</p>
             <div class="row align-items-center mb-4">
               <div class="col-md-6">
                 <img style="margin-top:1rem" src="diplomes/diplomesdelph/FS1_1200.jpg" class="img-fluid">
@@ -275,35 +359,35 @@
                 <img style="margin-top:1rem" src="diplomes/diplomesdelph/FS2_1200.jpg" class="img-fluid">
               </div>
             </div>
-            <h2 class="mt-4">La maîtrise progressive de l’énergie avec l’Aïkido</h2>
+            <h2 class="mt-4">Le travail de l&apos;énergie avec l’Aïkido</h2>
             <p>En parallèle, je me suis initiée en 2009 à l’aïkido, un art martial fondé sur l’harmonisation de l’énergie, ou "Qi" en japonais. Je progresse constamment dans cette discipline, marquant en 2024 une étape importante avec l’obtention de mon 1er DAN. À travers l’aïkido, j’apprends à canaliser et maîtriser cette énergie, en lien direct avec mes autres pratiques, intégrant force intérieure et maîtrise énergétique dans ma vie quotidienne.</p>
 
             <p class="mt-4">À travers ce parcours riche et diversifié, je recherche une approche complète du bien-être, de la santé et de l’équilibre, unissant les dimensions corporelle, énergétique et environnementale.</p>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
     </section>
 
 
     <!-- Contact Section -->
     <section id="contact" class="section-content">
       <!-- Image element - set the background image for the header in the line below-->
-        <div class="py-3 bg-image-full" style="background-image: url('res/paysage-contact.jpg') ; height:40rem; padding-top:0; display: flex; justify-content: center; align-items: center;">
-          <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
-          <div class="text-center my-1" style="padding-top:0; color:#222222">
+      <div class="py-3 bg-image-full" style="background-image: url('res/paysage-contact.jpg') ; height:40rem; padding-top:0; display: flex; justify-content: center; align-items: center;">
+        <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+        <div class="text-center my-1" style="padding-top:0; color:#222222">
+          <h3 style="margin-block-end: 8px">
+            <a id="Contact">Contact :</a>
+            <h3 style="margin-block-end: 8px"> Delphine BROSSARD</h3>
+            <h3 style="margin-block-end: 8px"> 07 89 04 82 75</h3>
             <h3 style="margin-block-end: 8px">
-              <a id="Contact">Contact :</a>
-              <h3 style="margin-block-end: 8px"> Delphine BROSSARD</h3>
-              <h3 style="margin-block-end: 8px"> 07 89 04 82 75</h3>
-              <h3 style="margin-block-end: 8px">
-                <a href="mailto:dbrossard38@gmail.com" style="color:#333333">dbrossard38@gmail.com</a>
-              </h3>
-          </div>
+              <a href="mailto:dbrossard38@gmail.com" style="color:#333333">dbrossard38@gmail.com</a>
+            </h3>
         </div>
-    <!-- Footer-->
-    <footer class="py-5" style="background-color:#71716f;" >
-      <div class="container" ><p class="m-0 text-center" style="color:#d7c7b0">Copyright &copy; Delphine Brossard 2025</p></div>
-    </footer>
+      </div>
+      <!-- Footer-->
+      <footer class="py-5" style="background-color:#71716f;" >
+        <div class="container" ><p class="m-0 text-center" style="color:#d7c7b0">Copyright &copy; Delphine Brossard 2025</p></div>
+      </footer>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
