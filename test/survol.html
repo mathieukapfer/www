@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Section Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Section cachée par défaut */
+    .hidden-section {
+      display: none;
+      padding: 10px;
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    /* Afficher la section lorsque le texte est survolé */
+    .hover-text:hover + .hidden-section {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="mb-4">Exemple : Afficher une section au survol</h1>
+
+  <!-- Texte à survoler -->
+  <p class="hover-text text-primary fw-bold" style="cursor: pointer;">
+    Survolez ce texte pour afficher plus d'informations.
+  </p>
+
+  <!-- Section qui apparaît -->
+  <div class="hidden-section">
+    <p>
+      Ceci est une section qui apparaît uniquement lorsque vous survolez le texte. Vous pouvez la styliser comme vous le souhaitez.
+    </p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

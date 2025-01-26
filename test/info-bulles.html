@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info-bulle avec image et texte</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Styles pour personnaliser l'info-bulle */
+    .custom-tooltip .tooltip-inner {
+      max-width: 300px; /* Largeur maximum de l'info-bulle */
+      background-color: #fff; /* Fond blanc */
+      color: #212529; /* Texte noir */
+      border: 1px solid #ddd; /* Bordure grise */
+      padding: 10px; /* Padding pour espacer le contenu */
+      border-radius: 8px; /* Bords arrondis */
+      text-align: center; /* Centrer le texte */
+    }
+    .custom-tooltip img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Exemple : Info-bulle avec image et texte</h1>
+
+    <!-- Élément avec une info-bulle -->
+    <p>
+      Survolez ce <span class="text-primary fw-bold" data-bs-toggle="tooltip" data-bs-html="true" title='<img src="https://via.placeholder.com/150" alt="Image"><br>Voici une description avec une image.' style="cursor: pointer;">texte interactif</span> pour voir l'info-bulle.
+    </p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialisation des tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  </script>
+</body>
+</html>
