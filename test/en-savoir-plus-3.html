@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affichage dynamique avec Bootstrap Collapse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Cacher la section bureau par défaut sur mobile */
+        @media (max-width: 767px) {
+            .desktop-section {
+                display: none;
+            }
+        }
+
+        /* Afficher la section bureau lorsqu'elle est activée sur mobile */
+        @media (max-width: 767px) {
+            .desktop-section.show {
+                display: block;
+            }
+        }
+
+        /* Cacher la section mobile par défaut sur bureau */
+        @media (min-width: 766px) {
+            .mobile-section {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body class="p-4">
+
+    <!-- Section Mobile -->
+    <section class="mobile-section bg-danger text-white p-3 mb-3">
+        <h2>Section Mobile</h2>
+        <p>Visible uniquement sur les petits écrans.</p>
+        <button id="toggleButton" class="btn btn-light" data-bs-toggle="collapse" data-bs-target="#desktopSection">
+            En savoir plus
+        </button>
+    </section>
+
+    <!-- Section Bureau (Cachée sur Mobile, Bootstrap Collapse) -->
+    <section id="desktopSection" class="desktop-section collapse bg-secondary text-white p-3">
+        <h2>Section Bureau</h2>
+        <p>Visible uniquement sur les grands écrans, sauf si activé par un clic.</p>
+    </section>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            let section = document.getElementById('desktopSection');
+            let button = document.getElementById('toggleButton');
+
+            // Attendre que Bootstrap gère l'animation avant de changer le texte du bouton
+            section.addEventListener('shown.bs.collapse', function () {
+                button.textContent = "Masquer";
+            });
+
+            section.addEventListener('hidden.bs.collapse', function () {
+                button.textContent = "En savoir plus";
+            });
+        });
+    </script>
+
+</body>
+</html>

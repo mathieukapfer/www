@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sections avec Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+    <div class="container">
+        <h2>Grande Section</h2>
+        <p>Voici une grande section d'information. Cliquez sur "En savoir plus" pour voir plus de détails.</p>
+
+        <!-- Bouton pour afficher la première section -->
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#section1">
+            En savoir plus sur le sujet 1
+        </button>
+        <div id="section1" class="collapse mt-2">
+            <div class="card card-body">
+                Détails supplémentaires sur le sujet 1. Vous pouvez inclure du texte, des images, ou tout autre contenu ici.
+            </div>
+        </div>
+
+        <!-- Bouton pour afficher la deuxième section -->
+        <button class="btn btn-secondary mt-3" data-bs-toggle="collapse" data-bs-target="#section2">
+            En savoir plus sur le sujet 2
+        </button>
+        <div id="section2" class="collapse mt-2">
+            <div class="card card-body">
+                Détails supplémentaires sur le sujet 2. Ce contenu est caché par défaut et s'affichera lorsque vous cliquerez.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
