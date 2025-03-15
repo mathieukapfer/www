@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Quicksand:wght@400;700&family=Sacramento&family=Amatic+SC:wght@400;700&family=Caveat:wght@400;700&family=Cookie&family=EB+Garamond:wght@400;700&family=Kaushan+Script&family=Nanum+Pen+Script&family=Pacifico&family=Parisienne&family=Poiret+One&family=Raleway:wght@400;700&family=Satisfy&family=Shadows+Into+Light&family=Zeyada&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <style>
       .font-great-vibes { font-family: 'Great Vibes', cursive; }
       .font-dancing-script { font-family: 'Dancing Script', cursive; }
@@ -27,7 +27,7 @@
       .font-satisfy { font-family: 'Satisfy', cursive; }
       .font-shadows-into-light { font-family: 'Shadows Into Light', cursive; }
       .font-zeyada { font-family: 'Zeyada', cursive; }
-
+      .font-indie { font-family:"Indie Flower", cursive; }
       #btnTop {
           position: fixed;
           bottom: 20px;
@@ -43,103 +43,83 @@
               width: 50%;
           }
       }
-      /* Section avec l'effet de parallaxe */
-      .parallax {
-          background-image: url('res/bandeauX4.jpg'); /* URL de l'image de fond */
-          height: 600px; /* Hauteur de la section */
-          background-attachment: fixed; /* C'est ce qui crée l'effet de parallaxe */
-          background-position: center;
-          background-repeat: no-repeat;
+
+      /* Style de la zone de texte */
+      body {
+          font-family: Quicksand, sans-serif;
+          font-size: 18px;
+      }
+      h0 {
+          font-family: Quicksand,; Arial, sans-serif;
+      }
+      h1 {
+          font-family: 'Amatic SC', cursive; Arial, sans-serif;
+          background-image: url('res/paysage-bandeau.jpg');
           background-size: cover;
-          }
-
-           /* Style de la zone de texte */
-           .parallax-text {
-               color: white;
-               text-align: center;
-               position: relative;
-               top: 50%;
-               transform: translateY(-50%);
-               font-size: 2.5rem;
-               font-weight: bold;
-               background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
-               padding: 20px;
-               border-radius: 10px;
-           }
-           body {
-               font-family: Quicksand, sans-serif;
-               font-size: 18px;
-           }
-           h0 {
-               font-family: Quicksand,; Arial, sans-serif;
-           }
-           h1 {
-               font-family: 'Amatic SC', cursive; Arial, sans-serif;
-               background-image: url('res/paysage-bandeau.jpg');
-               background-size: cover;
-               background-position: center;
-               text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
-               text-align: center;
-               font-weight: bold;
-               font-size: 3rem;
-               color:#4c4233;
-               padding-top: 50px;
-               padding-bottom: 50px;
-               margin-top: 0px;
-               margin-bottom: 0px
-           }
-           h3 {
-               margin-top: 1rem;
-               margin-bottom: 0.5 rem;
-           }
-           h5 {
-               font-family: 'Amatic SC', cursive; Arial, sans-serif;
-           }
-           .hero {
-               background-color: #F8F9FA;
-               padding: 0px;
-               text-align: center;
-           }
-           .hero h1 {
-               font-size: 2.5rem;
-               margin-bottom: 20px;
-           }
-           .hero p {
-               font-size: 1.2rem;
-           }
-           .section-title {
-               margin-top: 0px;
-               margin-bottom: 0px;
-               text-align: center;
-           }
-           .section-content {
-               margin-bottom: 0px;
-           }
-           .bg-image-full {
-               background-repeat: no-repeat;
-               background-attachment: scroll;
-               background-position: center;
-               background-size: cover;
-           }
+          background-position: center;
+          text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
+          text-align: center;
+          font-weight: bold;
+          font-size: 3rem;
+          color:#4c4233;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          margin-top: 0px;
+          margin-bottom: 0px
+      }
+      h3 {
+          margin-top: 1rem;
+          margin-bottom: 0.5 rem;
+      }
+      h5 {
+          font-family: 'Amatic SC', cursive; Arial, sans-serif;
+      }
+      .hero {
+          background-color: #F8F9FA;
+          padding: 0px;
+          text-align: center;
+      }
+      .hero h1 {
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+      }
+      .hero p {
+          font-size: 1.2rem;
+      }
+      .section-title {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          text-align: center;
+      }
+      .section-content {
+          margin-bottom: 0px;
+      }
+      .bg-image-full {
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center;
+          background-size: cover;
+      }
+      .image-container {
+            position: relative;
+            background-image: url('res/acceuil.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            width: 100vw;
+            min-height:600px;
+        }
+      .overlay {
+            background: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent */
+            width: 100%;
+            padding: 10px;
+            margin: 0px;
+        }
     </style>
-    <script>
-      // Script simple pour rendre l'effet de parallaxe plus dynamique
-      window.addEventListener('scroll', function() {
-          const parallax = document.querySelector('.hero__');
-
-          // Récupère la position de défilement
-          const scrollPosition = window.scrollY;
-
-          // Calcule la position verticale de base 'center' (50% de la hauteur de la section)
-          const basePosition = 50; // correspond à 50% pour background-position
-
-          // On ajoute un offset dépendant du défilement (par exemple, on divise le scroll pour ralentir)
-          const offset = scrollPosition * 0.5; // Facteur de vitesse (0.3 est plus lent)
-
-          // Met à jour la position du background (position horizontale 'center' et verticale base + offset)
-          parallax.style.backgroundPosition = `center calc(${basePosition}% + ${offset}px)`;
-      });
-    </script>
   </head>
 
   <body>
@@ -175,26 +155,20 @@
       </div>
     </nav>
 
-    <!-- Section avec l'effet de parallaxe -->
+    <!-- Section header -->
     <section class="hero" id="accueil" style="background-color:#000;">
-      <div class="container md-5 mx-auto" style="background-image: url('res/acceuil.jpg'); max-height:400px ;  background-repeat: no-repeat; background-size: cover; background-position: center;  position: relative; max-width: 100%; min-height:600px">
-
-        <!--  -->
-        <div class="mx-auto" style="max-width: 1000px; background-color: rgba(255, 255, 255, 0.0); width: 100%; padding: 5px; text-align: center;">
-          <div style="text-align: left;">
-            <!--img src="res/picto-fs-.png" alt="" style="margin:0rem; margin-bottom: 0rem; text-align:left; max-height:2.5rem; width: auto; object-fit: contain;"-->
-          </div>
-          <div style="margin-top:1rem">
-            <h0 class="font-poiret-one"  style="font-weight: bold; font-size: 2.2rem; color: #333; line-height:4rem;">"OM Sweet Home"</h0>
-            <h0 class="font-poiret-one"  style="font-weight: bold; font-size: 2.2rem; color: #333; line-height:4rem;"></h0>
-          </div>
-          <div style="font-weight: bold; font-size: 1.5rem; color: #OOO; padding: 0rem; margin: 1rem;">
-            <p style="margin-top:0rem; color:#087780; font-size: 1.5rem;">ORGANISATION DE LA MAISON / TRI - RANGEMENT - DESENCOMBREMENT / PURIFICATION DES ESPACES DE VIE / FENG SHUI TRADITIONNEL</p>
-          </div>
+      <div class="image-container">
+        <div class="fw-bold font-poiret-one"  style="padding-top: 3rem; font-weight: bold; font-size: 3.2rem; color: #333; line-height:4rem;">
+          <h0>OM Sweet Home</h0>
         </div>
-      </div>
-      <div style="margin-top: 2rem; text-align: right; color:#fff; margin-right:10px; text-shadow: 0px 0px 5px rgba(0, 0, 0, 1); " >
-
+        <p class="fw-bold font-poiret-one" style="margin:10px; font-size: 2rem; color:#fff;">
+          <strong>ORGANISATION DE LA MAISON</strong>
+        </p>
+        <div class="overlay fw-bold font-caveat" style="color:#78E7F0; font-size: 2rem; padding:0px; margin:0px">
+          <p style="padding:5px; margin:0px; font-size: 1.7rem;"> TRI - RANGEMENT - DESENCOMBREMENT</p>
+          <p style="padding:5px; margin:0px; font-size: 1.7rem;"> PURIFICATION DES ESPACES DE VIE</p>
+          <p style="padding:5px; margin:0px; font-size: 1.7rem; margin-bottom:10px"> FENG SHUI TRADITIONNEL</p>
+        </div>
       </div>
     </section>
 
