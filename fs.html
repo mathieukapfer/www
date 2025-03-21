@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" >
+    <title>OM Sweet Home - Détoxer votre habitat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Quicksand:wght@400;700&family=Sacramento&family=Amatic+SC:wght@400;700&family=Caveat:wght@400;700&family=Cookie&family=EB+Garamond:wght@400;700&family=Kaushan+Script&family=Nanum+Pen+Script&family=Pacifico&family=Parisienne&family=Poiret+One&family=Raleway:wght@400;700&family=Satisfy&family=Shadows+Into+Light&family=Zeyada&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      .font-great-vibes { font-family: 'Great Vibes', cursive; }
+      .font-dancing-script { font-family: 'Dancing Script', cursive; }
+      .font-quicksand { font-family: 'Quicksand', sans-serif; }
+      .font-sacramento { font-family: 'Sacramento', cursive; }
+      .font-amatic-sc { font-family: 'Amatic SC', cursive; }
+      .font-caveat { font-family: 'Caveat', cursive; }
+      .font-cookie { font-family: 'Cookie', cursive; }
+      .font-eb-garamond { font-family: 'EB Garamond', serif; }
+      .font-kaushan-script { font-family: 'Kaushan Script', cursive; }
+      .font-nanum-pen { font-family: 'Nanum Pen Script', cursive; }
+      .font-pacifico { font-family: 'Pacifico', cursive; }
+      .font-parisienne { font-family: 'Parisienne', cursive; }
+      .font-poiret-one { font-family: 'Poiret One', sans-serif; }
+      .font-raleway { font-family: 'Raleway', sans-serif; }
+      .font-satisfy { font-family: 'Satisfy', cursive; }
+      .font-shadows-into-light { font-family: 'Shadows Into Light', cursive; }
+      .font-zeyada { font-family: 'Zeyada', cursive; }
+      .font-indie { font-family:"Indie Flower", cursive; }
+      #btnTop {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: none; /* Caché par défaut */
+          z-index: 1000;
+          background-color:#d7c7b0;
+          border: none
+      }
+
+      @media (max-width: 768px) {
+          .col-sm-6 {
+              width: 50%;
+          }
+      }
+
+      /* Style de la zone de texte */
+      body {
+          font-family: Quicksand, sans-serif;
+          font-size: 18px;
+      }
+      h0 {
+          font-family: Quicksand,; Arial, sans-serif;
+      }
+      h1 {
+          font-family: 'Poiret One', cursive; Arial, sans-serif;
+          background-image: url('res/paysage-bandeauXXX.jpg');
+          background-size: cover;
+          background-color: #DcD2D3;
+          background-position: center;
+          text-shadow: 2px 2px 2px rgba(#087780, 1);
+          text-align: center;
+          font-weight: bold;
+          font-size: 3rem;
+          color:#087780;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          margin-top: 0px;
+          margin-bottom: 0px
+      }
+      h3 {
+          margin-top: 1rem;
+          margin-bottom: 0.5 rem;
+      }
+      h5 {
+          font-family: 'Amatic SC', cursive; Arial, sans-serif;
+          font-size:2rem;
+          color:#087780;
+      }
+      .hero {
+          background-color: #F8F9FA;
+          padding: 0px;
+          text-align: center;
+      }
+      .hero h1 {
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+      }
+      .hero p {
+          font-size: 1.2rem;
+      }
+      .section-title {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          text-align: center;
+      }
+      .section-content {
+          margin-bottom: 0px;
+      }
+      .bg-image-full {
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center;
+          background-size: cover;
+      }
+      .card {
+          background: rgba(70, 247, 260, 0.5);
+      }
+      .image-container {
+            position: relative;
+            background-image: url('res/acceuil.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            width: 100vw;
+            min-height:600px;
+        }
+      .overlay {
+            background: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent */
+            width: 100%;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-size:15px">Bienvenue <img src="res/frensh.png"> - Welcome <img src="res/english.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#offres">Mes Offres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pres">Le Feng Shui</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#bio">Mon Parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ethique.html#ethique">Ethique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Pres FS Section -->
+    <section id="pres" class="section-content" style="background-image: url('res/TBD.jpg';); background-repeat: no-repeat; background-size: cover ; padding-bottom: 1rem; margin-bottom: 0px; margin-top: 0px;">
+
+      <h1 class="section-content">Le Feng Shui "Traditionnel", qu'est-ce-que c'est ? </h1>
+
+      <div class="container md-5 mx-auto" style="max-width: 1000px;">
+        <section class="intro">
+          <p class="lead" style="margin-top:1rem; margin-bottom:1rem">
+            Le Feng Shui traditionnel est l’art et la science d’agir sur la destinée de l’homme par une organisation énergétique optimale et harmonieuse de son environnement. A ne pas confondre avec le Feng Shui dit "occidental" davantage tourné vers la décoration et la symbolique.</p>
+          <p>
+        </section>
+
+        <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.2); padding:1rem;">
+          <h2>La naissance d’une science</h2>
+
+          <div class="row align-items-center">
+            <div class="col-md-5 rounded">
+              <p style="text-align:center;">
+                <img src="res/luopan-2.JPG" alt="Dragon" class="img-fluid rounded" style="max-height:15rem">
+              </p>
+            </div>
+            <div class="col-md-7">
+              <p>
+                Issu de la métaphysique taoïste chinoise, le Feng Shui classique est aujourd’hui considéré comme un patrimoine culturel mondial.
+                Il y a 5000 ans, les érudits taoïstes ont compris l’importance de l’environnement géographique d’un peuple sur sa prospérité : ils ont compris que LÀ où ils vivaient avait un impact sur COMMENT ils vivaient.
+              </p>
+              <!-- Bouton pour afficher la section fs-1 -->
+              <button class="btn btn-primary show d-block" style="border:none; background-color:#d7c7b0" data-bs-toggle="collapse" data-bs-target="#section-fs-1">
+                >>
+              </button>
+            </div>
+          </div>
+          <!-- invsible par default -->
+          <div id="section-fs-1" class="collapse  mt-2">
+            <p>
+              L’Homme, pour vivre une existence heureuse et prospère, doit se placer avec Harmonie entre Ciel et Terre.
+            </p>
+            <p>
+              Afin de mettre en forme leurs études et leurs constats, les taoïstes ont mis au point plusieurs systèmes complexes de formules.
+            </p>
+            <p>
+              Grâce à ces formules et à la schématisation de leur compréhension du fonctionnement de l’Univers, le Feng Shui peut aujourd’hui être enseigné et transmis de génération en génération, et être diffuser dans le monde entier.</p>
+            <p>Plus qu’une science de terrain, le Feng Shui englobe aussi la destinée de l’Homme dans son espace Temps. Outre les systèmes d’analyses de l’environnement (routes, buildings, montagnes, villes, villages, lacs, mers, fleuves, rivières, piscines …), le Feng Shui utilise le ciel et ses mouvements  (jour, mois, année, saison, cycle des étoiles … ) et inclue dans son système la notion de moments favorables pour l’Action de l’Homme.
+            </p>
+            <p>
+              Le Feng Shui s’étudie et se transpose de l’infiniment grand à l’infiniment petit. La méthodologie reste la même, voguant du macrocosme (villes, métropoles, pays …) au microcosme (maison, appartement, chambre …).
+            </p>
+            <p>
+              Outil précieux, réel et concret, le Feng Shui permet d’étudier, d’anticiper, et d’agir sur le destin de l’Homme, et donc d’améliorer son quotidien et son existence à long terme.
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.3); padding:1rem;">
+          <h2>Le Souffle du Dragon</h2>
+          <div class="row align-items-center">
+            <div class="col-md-5 align-items-center">
+              <p style="text-align:center;">
+                <img src="res/dragon.PNG" style="max-height:15rem" alt="Dragon" class="img-fluid rounded">
+              </p>
+            </div>
+            <div class="col-md-7 rounded">
+              <p>
+                Le Souffle du Dragon, c’est l’Energie qui s’écoule de la Montagne par le souffle du Vent. C’est le fameux Qi, appelé aussi Souffle cosmique, ou Souffle vital. Du haut de la montagne, le Qi parcourt la Terre jusqu’à rencontrer l’Eau. L&#39;Eau collecte et accumule le Qi, et le Qi génère la Vie.</p>
+              <!-- Bouton pour afficher la section fs-2 -->
+              <button class="btn btn-primary show d-block" style="border:none; background-color:#d7c7b0" data-bs-toggle="collapse" data-bs-target="#section-fs-2">
+                >>
+              </button>
+            </div>
+            <!-- invsible par default -->
+            <div id="section-fs-2" class="collapse  mt-2">
+              <p>
+                Le Qi traverse, relie et anime toute chose sur Terre. C’est le fluide vital qui anime tout être vivant, de sa naissance jusqu’à sa mort. C’est l’Energie qui monte au Printemps et redescend à l’Automne. C’est celle qui sommeille en Hiver, et qui brûle en Été, à son apogée, par le Feu du soleil Yang. C’est aussi l’Energie qui donne force et densité au Minéral, son aplomb et son expansion au Végétal, ses courbes et sa fluidité à l’Océan.
+              </p>
+              <p>
+                Sur Terre, tout est question d’Equilibre. Trop de Vent et la terre est asséchée ; trop d’Eau et la terre est inondée. Trop de Feu et la terre est brûlée.
+
+                Le Feng (Vent) Shui (Eau) et le Qi (Energie), déterminent la Vie sur Terre.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.6); padding:1rem;">
+          <h2>La manifestation de l’Univers</h2>
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <p style="text-align:center;">
+                <img src="res/tao-cosmos.jpg" style="max-height:15rem" alt="Tao" class="img-fluid rounded">
+              </p>
+            </div>
+            <div class="col-md-7">
+              <p>
+                A l’origine, l’Univers était Un.
+
+                Pour se manifester, le Grand Tout s’est scindé en Deux, puis Trois, puis en 10 000 êtres . Le Yin et le Yang , représenté par le symbole du Tai Ji, montre que rien n’existe dans l’existence sans son opposé. Le chaud et le froid, le grand et le petit, le lourd et le léger, l’Amour et la peur .. tout, absolument tout dans l’Univers est en dualité. Et, à la maturité de chaque chose, germe la graine de son opposé. Tout est cycle de transformation.
+              </p>
+              <!-- Bouton pour afficher la section fs-3 -->
+              <button class="btn btn-primary show d-block" style="border:none; background-color:#d7c7b0" data-bs-toggle="collapse" data-bs-target="#section-fs-3">
+                >>
+              </button>
+            </div>
+          </div>
+          <div id="section-fs-3" class="collapse  mt-2">
+
+            <div class="row align-items-center">
+              <div class="col-md-6 rounded">
+                <p>Tout est cycle permanent de mort et de renaissance, le but étant, dans certaines philosophies, de revenir à la grande conscience, à l’Unité.
+
+                  Pour définir la manifestation de l’Univers, les taoïstes ont mis au point le système de transformation de la matière, celui des 5 éléments (ou 5 mouvements). Les 5 éléments que sont l’Eau, le Bois, le Feu, la Terre et le Métal interagissent entre eux selon 3 cycles complémentaires : cycle de production, cycle de destruction, cycle de contrôle.</p>
+              </div>
+              <div class="col-md-6">
+                <p style="text-align:center;">
+                  <img src="res/5_element.PNG" alt="Dragon" class="img-fluid rounded" style="max-height:20rem">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.6); padding:1rem;">
+          <h2>Applications modernes</h2>
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <p style="text-align:center;">
+                <img src="res/Ba Gua visuel.PNG" style="max-height:15rem" alt="Tao" class="img-fluid rounded">
+
+              </p>
+            </div>
+            <div class="col-md-7 rounded">
+              <p>
+                Le but du Feng Shui est d’améliorer la Vie des personnes. Grâce aux différents systèmes d’approche, on peut mesurer et identifier la qualité des énergies en présence pour soit les capter si elles sont bénéfiques (Sheng Qi), soit les neutraliser si elles sont néfastes (Sha Qi). On peut aussi, grâce aux formules San Yuan (Temps), connaître, prévoir et anticiper sur sa destinée.</p>
+              <p style="text-align:right">
+                <!-- Bouton pour afficher la section fs-4 -->
+                <button class="btn btn-primary show d-block" style="border:none; background-color:#d7c7b0" data-bs-toggle="collapse" data-bs-target="#section-fs-4">
+                  >>
+                </button>
+              </p>
+            </div>
+            <!-- invsible par default -->
+            <div id="section-fs-4" class="collapse  mt-2">
+
+              <p>Une analyse Feng Shui complète comporte 4 dimensions : l’Environnement extérieur (le Paysage), l’Environnement intérieur (la Maison), la Personne et le Temps.</p>
+              <p>Chaque personne « a » un Feng Shui différent. A sa naissance, chaque être vivant reçoit comme un flash énergétique, un code, une identité cosmique : c’est le Ming Gua (ou chiffre Kua). En combinant ce code avec les différentes formules et systèmes de Feng Shui classique, on va pouvoir analyser et définir si le « Feng Shui » d’un lieu est "bon" ou pas pour chacun des habitants.</p>
+              <p>Pour effectuer ses mesures, le praticien Feng Shui utilise une boussole très élaborée, le Luo Pan. Grâce à ses mesures et à toutes ses analyses, il pourra recommander et conseiller des aménagements et des changements spécifiques au bureau et à la maison, afin d’optimiser les 4 grands différents aspects de la Vie : Amour &amp; Relations, Santé &amp; Aide céleste , Vitalité &amp; Prospérité, Sérénité &amp; Clarté d&#39;Esprit.
+              </p>
+              <p> Le feng Shui classique n’est donc pas que de la décoration. Ce serait ignorer les grands fondements des anciens maîtres taoïstes, dilués pour beaucoup à leur arrivée en Occident. Mais on peut quand même se faire plaisir à décorer sa maison, l’important étant d’avoir toujours en tête la qualité du Qi et sa circulation libre, claire et tranquille.
+              </p>
+            </div>
+          </div>
+
+        </div>
+          </div>
+          <br>
+
+        </div>
+      </div>
+      <br>
+    </section>
+
+    <!-- Bouton de retour en haut -->
+    <button id="btnTop" class="btn btn-primary">^</button>
+
+    <script>
+      // Afficher/Masquer le bouton en fonction du défilement
+      window.onscroll = function() {
+          let btn = document.getElementById("btnTop");
+          if (document.documentElement.scrollTop > 300) {
+              btn.style.display = "block";
+          } else {
+              btn.style.display = "none";
+          }
+      };
+
+      // Remonter en haut lorsqu&#39;on clique sur le bouton
+      document.getElementById("btnTop").addEventListener("click", function() {
+          window.scrollTo({top: 0, behavior: "smooth"});
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

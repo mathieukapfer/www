@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" >
+    <title>OM Sweet Home - Détoxer votre habitat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Quicksand:wght@400;700&family=Sacramento&family=Amatic+SC:wght@400;700&family=Caveat:wght@400;700&family=Cookie&family=EB+Garamond:wght@400;700&family=Kaushan+Script&family=Nanum+Pen+Script&family=Pacifico&family=Parisienne&family=Poiret+One&family=Raleway:wght@400;700&family=Satisfy&family=Shadows+Into+Light&family=Zeyada&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      .font-great-vibes { font-family: 'Great Vibes', cursive; }
+      .font-dancing-script { font-family: 'Dancing Script', cursive; }
+      .font-quicksand { font-family: 'Quicksand', sans-serif; }
+      .font-sacramento { font-family: 'Sacramento', cursive; }
+      .font-amatic-sc { font-family: 'Amatic SC', cursive; }
+      .font-caveat { font-family: 'Caveat', cursive; }
+      .font-cookie { font-family: 'Cookie', cursive; }
+      .font-eb-garamond { font-family: 'EB Garamond', serif; }
+      .font-kaushan-script { font-family: 'Kaushan Script', cursive; }
+      .font-nanum-pen { font-family: 'Nanum Pen Script', cursive; }
+      .font-pacifico { font-family: 'Pacifico', cursive; }
+      .font-parisienne { font-family: 'Parisienne', cursive; }
+      .font-poiret-one { font-family: 'Poiret One', sans-serif; }
+      .font-raleway { font-family: 'Raleway', sans-serif; }
+      .font-satisfy { font-family: 'Satisfy', cursive; }
+      .font-shadows-into-light { font-family: 'Shadows Into Light', cursive; }
+      .font-zeyada { font-family: 'Zeyada', cursive; }
+      .font-indie { font-family:"Indie Flower", cursive; }
+      #btnTop {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: none; /* Caché par défaut */
+          z-index: 1000;
+          background-color:#d7c7b0;
+          border: none
+      }
+
+      @media (max-width: 768px) {
+          .col-sm-6 {
+              width: 50%;
+          }
+      }
+
+      /* Style de la zone de texte */
+      body {
+          font-family: Quicksand, sans-serif;
+          font-size: 18px;
+      }
+      h0 {
+          font-family: Quicksand,; Arial, sans-serif;
+      }
+      h1 {
+          font-family: 'Poiret One', cursive; Arial, sans-serif;
+          background-image: url('res/paysage-bandeauXXX.jpg');
+          background-size: cover;
+          background-color: #DcD2D3;
+          background-position: center;
+          text-shadow: 2px 2px 2px rgba(#087780, 1);
+          text-align: center;
+          font-weight: bold;
+          font-size: 3rem;
+          color:#087780;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          margin-top: 0px;
+          margin-bottom: 0px
+      }
+      h3 {
+          margin-top: 1rem;
+          margin-bottom: 0.5 rem;
+      }
+      h5 {
+          font-family: 'Amatic SC', cursive; Arial, sans-serif;
+          font-size:2rem;
+          color:#087780;
+      }
+      .hero {
+          background-color: #F8F9FA;
+          padding: 0px;
+          text-align: center;
+      }
+      .hero h1 {
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+      }
+      .hero p {
+          font-size: 1.2rem;
+      }
+      .section-title {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          text-align: center;
+      }
+      .section-content {
+          margin-bottom: 0px;
+      }
+      .bg-image-full {
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center;
+          background-size: cover;
+      }
+      .card {
+          background: rgba(70, 247, 260, 0.5);
+      }
+      .image-container {
+            position: relative;
+            background-image: url('res/acceuil.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            width: 100vw;
+            min-height:600px;
+        }
+      .overlay {
+            background: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent */
+            width: 100%;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-size:15px">Bienvenue <img src="res/frensh.png"> - Welcome <img src="res/english.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#offres">Mes Offres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fs.html#pres">Le Feng Shui</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#bio">Mon Parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ethique.html#ethique">Ethique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Ethique section -->
+    <section id="ethique" class="section-content" style="background-image: url(&#39;res/paysage-crop.jpg&#39;); background-repeat: no-repeat; background-size: cover ; padding-bottom: 0rem; margin-bottom: 0px; margin-top: 0px;">
+      <h1 class="class-content">Ethique & engagements</h1>
+      <div class="shadow-lg rounded" style="background-color: rgba(255, 255, 255, 0.2); padding:1rem;">
+        <div class="container mx-auto shadow-lg" style="max-width: 1000px;">
+          <h2>Mon éthique de praticienne énergétique</h2>
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <p style="text-align:center;">
+                <img src="res/ETHIQUE.JPG" alt="etique" class="img-fluid rounded" style="max-height:25rem">
+              </p>
+            </div>
+            <div class="col-md-7">
+
+              <p>
+                Ma motivation est d&#39;aider les êtres humains à s'aligner avec eux-mêmes et à trouver leur juste place dans leur environnement, afin d&#39;améliorer leur existence et d&#39;optimiser leur destinée.
+              </p>
+            </div>
+
+            <p>
+              <strong>Un monde qui va bien, c’est un monde en Paix 🙏🏻</strong>
+            </p>
+            <p>
+            Sur l’ensemble des influences énergétiques de la Terre &amp; du Ciel, environ 30% impactent l'intérieur de notre habitat. C'est donc 1/3 des énergies à notre portée à travailler. Comme on ne peut pas toujours déménager facilement en cas de "mauvais" Feng Shui environnemental, il est plus facile d’améliorer le Feng Shui intérieur pour obtenir des résultats rapides.
+
+            </p>
+          </div>
+        </div>
+        <br>
+
+        <div class="container mx-auto shadow-lg" style="max-width: 1000px;">
+          <h2>Mes 10 engagements</h2>
+          <ul>
+            <li>Prendre soin de mes clients et leur fournir un service de qualité.</li>
+            <li>Exercer ma profession avec honnêteté, compassion, bienveillance et sobriété.</li>
+            <li>Rester humble et honnête.</li>
+            <li>Servir au mieux mes clients en fonction de mes capacités et continuer à développer mes connaissances et à améliorer mes pratiques.</li>
+            <li>Il y a toujours plus à connaître. En cas de doute, je me réfère aux bases &amp; aux fondements.</li>
+            <li>En cas d’erreur, je l’accepte et je la corrige.</li>
+            <li>Respecter la confidentialité des problématiques et des informations de mes clients.</li>
+            <li>M’abstenir de pratiquer dans des conditions inappropriées ou pour des personnes malintentionnées.</li>
+            <li>Attendre une demande claire du client ; ne pas devancer le besoin.</li>
+            <li>Ne rien imposer au client : le client reste libre de suivre et d’appliquer les recommandations du praticien Feng Shui et du Home Organiser.</li>
+          </ul>
+          <p><i>Le Feng Shui étant un art subtil, et le client acceptant de façon libre, éclairée, et consentante les recommandations du praticien a qui il a fait une demande claire et ordonnée, le praticien ne serait être tenu pour responsable de toute mauvaise interprétation ou mauvaise utilisation desdites recommandations. De même, le praticien ne pourrait être tenu pour responsable de toute conséquence ou de tout rapport de cause à effet non désiré concrètement par le client. En utilisant l'art subtil du feng shui, le client accepte l'ouverture des énergies et des opportunités. Une période d'ajustement énergétique et cosmique peut prendre place en amont des changements positifs. En accédant à ce contenu, l&#39;utilisateur accepte expressément cette limitation de responsabilité.</i></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bouton de retour en haut -->
+    <button id="btnTop" class="btn btn-primary">^</button>
+
+    <script>
+      // Afficher/Masquer le bouton en fonction du défilement
+      window.onscroll = function() {
+          let btn = document.getElementById("btnTop");
+          if (document.documentElement.scrollTop > 300) {
+              btn.style.display = "block";
+          } else {
+              btn.style.display = "none";
+          }
+      };
+
+      // Remonter en haut lorsqu&#39;on clique sur le bouton
+      document.getElementById("btnTop").addEventListener("click", function() {
+          window.scrollTo({top: 0, behavior: "smooth"});
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
