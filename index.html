@@ -9,6 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Quicksand:wght@400;700&family=Sacramento&family=Amatic+SC:wght@400;700&family=Caveat:wght@400;700&family=Cookie&family=EB+Garamond:wght@400;700&family=Kaushan+Script&family=Nanum+Pen+Script&family=Pacifico&family=Parisienne&family=Poiret+One&family=Raleway:wght@400;700&family=Satisfy&family=Shadows+Into+Light&family=Zeyada&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      function startCounter(elementId, maxValue) {
+          let counter = 1;
+          let interval = setInterval(() => {
+              if (counter >= maxValue) {
+                  clearInterval(interval);
+              } else {
+                  counter++;
+                  document.getElementById(elementId).textContent = counter;
+              }
+          }, 500);
+      }
+
+      function isElementInViewport(el) {
+          const rect = el.getBoundingClientRect();
+          return (
+              rect.top >= 0 &&
+                  rect.left >= 0 &&
+                  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+      }
+
+      function handleScroll() {
+          ['counter1', 'counter2', 'counter3'].forEach((id, index) => {
+              let element = document.getElementById(id);
+              if (isElementInViewport(element) && element.textContent == "1") {
+                  startCounter(id, index + 1);
+              }
+          });
+      }
+
+      document.addEventListener("DOMContentLoaded", handleScroll);
+      window.addEventListener("scroll", handleScroll);
+    </script>
+
     <style>
       .font-great-vibes { font-family: 'Great Vibes', cursive; }
       .font-dancing-script { font-family: 'Dancing Script', cursive; }
@@ -124,8 +160,10 @@
             width: 100%;
             padding: 10px;
             margin: 0px;
-        }
+      }
+
     </style>
+
   </head>
 
   <body>
@@ -194,46 +232,49 @@
               </strong>
             </p>
 
-        <div class="row g-4">
-            <!-- Proposition 1 -->
-            <div class="col-md-4">
-              <a href="#offre-1" style="display: block; text-decoration: none; color: inherit;">
-                <div class="card shadow-sm border-0">
+            <div class="row g-4">
+              <!-- Proposition 1 -->
+              <div class="col-md-4">
+                <a href="#offre-1" style="display: block; text-decoration: none; color: inherit;">
+                  <div class="card shadow-sm border-0">
                     <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Besoin de trier, désencombrer, organiser votre maison&nbsp;?</h5>
-                        <p class="text-primary fs-4">&#10132;</p>
-                        <p class="card-text">Faites appel au <strong>Home Organising</strong>&nbsp;!</p>
+                      <p id="counter1" class="display-6">1</p>
+                      <h5 class="card-title fw-bold">Besoin de trier, désencombrer, organiser votre maison&nbsp;?</h5>
+                      <img src="res/arrow.png"/>
+                      <p class="card-text">Faites appel au <strong>Home Organising</strong>&nbsp;!</p>
                     </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Proposition 2 -->
-            <div class="col-md-4">
-              <a href="#offre-2" style="display: block; text-decoration: none; color: inherit;">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Besoin de netoyer, purifier et alleger votre athmosphere&nbsp;?</h5>
-                    <p class="text-primary fs-4">&#10132;</p>
-                    <p class="card-text">Demandez un <strong>nettoyage énergétique</strong> de votre intérieur&nbsp;!</p>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
 
-            <!-- Proposition 3 -->
-            <div class="col-md-4">
-              <a href="#offre-3" style="display: block; text-decoration: none; color: inherit;">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Envie d'aller plus loin et d'optimiser vos potentiels de vie&nbsp;?</h5>
-                    <p class="text-primary fs-4">&#10132;</p>
-                    <p class="card-text">Optez pour une analyse selon le <strong>Feng Shui traditionnel</strong> et activez vos énergies favorables de vie&nbsp;!</p>
+              <!-- Proposition 2 -->
+              <div class="col-md-4">
+                <a href="#offre-2" style="display: block; text-decoration: none; color: inherit;">
+                  <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                      <p id="counter2" class="display-6">1</p>
+                      <h5 class="card-title fw-bold">Besoin de netoyer, purifier et alleger votre athmosphere&nbsp;?</h5>
+                      <img src="res/arrow.png"/>
+                      <p class="card-text">Demandez un <strong>nettoyage énergétique</strong> de votre intérieur&nbsp;!</p>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+
+              <!-- Proposition 3 -->
+              <div class="col-md-4">
+                <a href="#offre-3" style="display: block; text-decoration: none; color: inherit;">
+                  <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                      <p id="counter3" class="display-6">1</p>
+                      <h5 class="card-title fw-bold">Envie d'aller plus loin et d'optimiser vos potentiels de vie&nbsp;?</h5>
+                      <img src="res/arrow.png"/>
+                      <p class="card-text">Optez pour une analyse selon le <strong>Feng Shui traditionnel</strong> et activez vos énergies favorables de vie&nbsp;!</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </div>
 
         </section>
         <br>
@@ -247,7 +288,7 @@
             </p>
           </div>
           <div class="col-md-6">
-            <img class="img-responsive rounded-circle center-block d-block mx-auto " style="height: 15rem; border-radius:8px; center" src="res/portrait9.jpg" alt="moi">
+            <img class="img-responsive rounded-circle center-block d-block mx-auto " style="height: 15rem; border-radius:8px; center" src="res/portrait11_.jpg" alt="moi">
             <br>
           </div>
         </div>
@@ -542,7 +583,7 @@
         <div class="text-center my-1" style="padding-top:0; color:#222222">
           <h3 style="margin-block-end: 8px">
             <a id="Contact">Contact :</a>
-          </h3><h3 style="margin-block-end: 8px"> Delphine BROSSARD</h3>
+          </h3><h3 style="margin-block-end: 8px">Delphine BROSSARD</h3>
           <h3 style="margin-block-end: 8px">
             <a href="tel:+33789048275"style="color:#333333" >07 89 04 82 75</a>
           </h3>
