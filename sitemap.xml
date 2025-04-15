@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- Page d'accueil (sans index.html) -->
+    <!-- Page d'accueil -->
     <url>
-        <loc>https://om-sweet-home.fr/</loc>
+        <loc>https://om-sweet-home.fr</loc>
         <lastmod>2025-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -11,14 +11,14 @@
 
     <!-- Autres pages -->
     <url>
-        <loc>https://om-sweet-home.fr/fs</loc>
+        <loc>https://om-sweet-home.fr/fs.html</loc>
         <lastmod>2025-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://om-sweet-home.fr/ethique</loc>
+        <loc>https://om-sweet-home.fr/ethique.html</loc>
         <lastmod>2025-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
